@@ -1,4 +1,4 @@
-# Direktori Pembelajaran DevOps TBS Food
+# Direktori Pembelajaran DevOps
 
 Selamat datang di repositori materi dan hands-on lab DevOps personal. Seluruh modul, catatan teori, script latihan, dan implementasi riil disimpan secara terstruktur di sini agar Anda dan AI agent dapat melanjutkan proses pembelajaran kapan saja.
 
