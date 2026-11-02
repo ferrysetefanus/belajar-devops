@@ -1,0 +1,3 @@
+2026-11-02 08:02:45 [ERROR] [PaymentGateway] Payment TIMEOUT for Order #1003 - Gateway response 504 Gateway Timeout
+2026-11-02 08:08:23 [ERROR] [Database] Connection failed to read replica db-slave-01 - Error: Too many connections
+2026-11-02 08:12:08 [ERROR] [ETLWorker] Transformation failed on row 3: Null value found in column 'tax_rate'

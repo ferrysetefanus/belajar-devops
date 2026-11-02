@@ -1,0 +1,41 @@
+version: '3.8'
+
+services:
+  # 1. Database PostgreSQL Resmi untuk Data Penjualan
+  db:
+    image: postgres:16-alpine
+    container_name: tbs-postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: tbs_admin
+      POSTGRES_PASSWORD: SecretPassword123
+      POSTGRES_DB: tbs_sales_db
+    ports:
+      - "5432:5432"
+    volumes:
+      - tbs_postgres_data:/var/lib/postgresql/data
+
+  # 2. Aplikasi Dashboard Penjualan TBS Food
+  dashboard:
+    build:
+      context: ./sample-app
+      dockerfile: Dockerfile
+    container_name: tbs-sales-dashboard
+    restart: unless-stopped
+    ports:
+      - "8080:8080"
+    environment:
+      PORT: 8080
+      DB_HOST: db                  # Menghubungi service 'db' menggunakan internal DNS Docker
+      DB_PORT: 5432
+      DB_NAME: tbs_sales_db
+      DB_USER: tbs_admin
+      DB_PASSWORD: SecretPassword123
+      ENV: "Docker Compose Multi-Container"
+    depends_on:
+      - db
+
+# 3. Volume penyimpanan permanen data penjualan
+volumes:
+  tbs_postgres_data:
+
