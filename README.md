@@ -60,10 +60,12 @@ DEVOPS/
   File: [`modul/fase-2/04-cicd-github-actions.md`](modul/fase-2/04-cicd-github-actions.md)  
   Workflow: [`.github/workflows/deploy.yml`](.github/workflows/deploy.yml)  
   *Status:* Pipeline CI/CD teruji sukses 100%! Push ke GitHub otomatis deploy ke Cloud Run secara live.
-- [ ] **Modul 2.5: Integrasi Database PostgreSQL di Compute Engine (e2-micro Always Free)**  
+- [x] **Modul 2.5: Integrasi Database PostgreSQL di Compute Engine (e2-micro Always Free)**  
   File: [`modul/fase-2/05-database-e2-micro.md`](modul/fase-2/05-database-e2-micro.md)  
-  *Status:* Sedang dikerjakan (membuat VM gratis & setup database permanen).
-- [ ] **Modul 2.6: Otomasi Scheduled ETL Worker (Cloud Run Jobs + Cloud Scheduler)**
+  *Status:* Berhasil setup VM e2-micro di US (`us-central1-a`) dengan IP `34.28.20.49` & PostgreSQL terhubung ke Cloud Run.
+- [ ] **Modul 2.6: Otomasi Scheduled ETL Worker (Cloud Run Jobs + Cloud Scheduler)**  
+  File: [`modul/fase-2/06-cloud-run-jobs-scheduler.md`](modul/fase-2/06-cloud-run-jobs-scheduler.md)  
+  *Status:* Sedang dikerjakan (membuat script batch ETL & pemicu cron otomatis).
 
 ---
 
