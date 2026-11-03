@@ -7,3 +7,4 @@ output "bucket_url" {
   description = "URL akses Google Cloud Storage"
   value       = google_storage_bucket.tbs_backup_bucket.url
 }
+

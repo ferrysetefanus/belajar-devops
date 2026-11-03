@@ -143,3 +143,4 @@ Jika suatu hari Anda ingin menghapus seluruh resource yang dibuat oleh Terraform
 terraform destroy -auto-approve
 ```
 Semua yang dibuat di `main.tf` akan dihapus bersih seketika!
+

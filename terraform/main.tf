@@ -26,3 +26,4 @@ resource "google_storage_bucket" "tbs_backup_bucket" {
     enabled = true
   }
 }
+

@@ -9,3 +9,4 @@ variable "region" {
   type        = string
   default     = "asia-southeast2"
 }
+
