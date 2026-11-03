@@ -46,19 +46,26 @@ DEVOPS/
 
 ---
 
-### ⏳ FASE 2: Implementasi GCP Hemat Biaya & CI/CD Pipeline
+### ✅ FASE 2: Implementasi GCP Hemat Biaya & CI/CD Pipeline (SELESAI 100%)
 - [x] **Modul 2.1: Fondasi GCP & Navigasi Cloud Console / Cloud Shell**  
   File: [`modul/fase-2/01-gcp-fundamentals-dan-setup.md`](modul/fase-2/01-gcp-fundamentals-dan-setup.md)  
   *Status:* Berhasil setup Project GCP & mengaktifkan API.
 - [x] **Modul 2.2: Google Artifact Registry & Image Management di Cloud**  
   File: [`modul/fase-2/02-artifact-registry.md`](modul/fase-2/02-artifact-registry.md)  
-  *Status:* Image `sales-dashboard:v1` berhasil di-build dan disimpan di Artifact Registry (region Jakarta).
+  *Status:* Image berhasil di-build dan disimpan di Artifact Registry (region Jakarta).
 - [x] **Modul 2.3: Serverless Deployment ke Cloud Run & Scheduled ETL Jobs**  
   File: [`modul/fase-2/03-cloud-run-deployment.md`](modul/fase-2/03-cloud-run-deployment.md)  
   *Status:* Berhasil deploy service `tbs-sales-dashboard` ke Google Cloud Run (HTTPS live di region Jakarta: `asia-southeast2`).
 - [x] **Modul 2.4: Otomasi CI/CD dengan GitHub Actions**  
   File: [`modul/fase-2/04-cicd-github-actions.md`](modul/fase-2/04-cicd-github-actions.md)  
   Workflow: [`.github/workflows/deploy.yml`](.github/workflows/deploy.yml)  
-  *Status:* Pipeline CI/CD terkonfigurasi & siap dideploy otomatis via `git push`.
+  *Status:* Pipeline CI/CD teruji sukses 100%! Push ke GitHub otomatis deploy ke Cloud Run secara live.
+
+---
+
+### ⏳ FASE 3: Infrastructure as Code (Terraform) & Observability (NEXT)
+- [ ] **Modul 3.1: Konsep IaC & Instalasi Terraform**
+- [ ] **Modul 3.2: Otomasi Provisioning Resource GCP dengan Terraform (Google Provider)**
+- [ ] **Modul 3.3: Monitoring, Logging & Alerting Otomatis ke Telegram/Slack**
 
 # belajar-devops
