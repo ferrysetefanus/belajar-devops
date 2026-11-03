@@ -123,7 +123,7 @@ flowchart LR
   - `Monitoring & Observability Layer` (CloudWatch/Cloud Monitoring, Prometheus & Grafana konsep, PromQL, Alerting & Notification Strategies)
 * **Milestone / Proyek Riil:**
   - [x] Seluruh resource GCP untuk project TBS Food didefinisikan dalam repository Terraform (`main.tf`, `variables.tf`).
-  - [ ] Setup alert policy: Jika error rate Cloud Run > 2% atau Cloud Run Job exit code != 0, kirim pesan instan ke kanal Slack/Telegram tim.
+  - [x] Setup alert policy: Jika error rate Cloud Run > 2% atau Cloud Run Job exit code != 0, kirim pesan instan ke kanal Email/Slack tim.
 
 ---
 

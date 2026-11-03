@@ -70,7 +70,7 @@ DEVOPS/
 
 ---
 
-### ⏳ FASE 3: Infrastructure as Code (Terraform) & Observability (ONGOING)
+### ✅ FASE 3: Infrastructure as Code (Terraform) & Observability (SELESAI 100%)
 - [x] **Modul 3.1: Konsep IaC & Pengenalan Terraform (HashiCorp HCL)**  
   File: [`modul/fase-3/01-terraform-fundamentals.md`](modul/fase-3/01-terraform-fundamentals.md)  
   *Status:* Memahami filosofi IaC, kelemahan ClickOps, dan siklus perintah `init`, `plan`, `apply`, `destroy`.
@@ -78,6 +78,15 @@ DEVOPS/
   File: [`modul/fase-3/02-terraform-gcp-provisioning.md`](modul/fase-3/02-terraform-gcp-provisioning.md)  
   Code: [`terraform/`](terraform/)  
   *Status:* Berhasil membuat GCS Bucket di Jakarta (`the-byway-487902-m9-tbs-sales-backup`) hanya dalam 1 detik lewat `terraform apply`.
-- [ ] **Modul 3.3: Monitoring, Logging & Alerting Otomatis ke Telegram/Slack**
+- [x] **Modul 3.3: Monitoring, Logging & Alerting Otomatis**  
+  File: [`modul/fase-3/03-observability-dan-alerting.md`](modul/fase-3/03-observability-dan-alerting.md)  
+  *Status:* Konfigurasi 3 pilar observability & alarm otomatis berbasis error log ke email/notifikasi.
+
+---
+
+### ⏳ FASE 4: AWS Bridge & Advanced DevOps (Minikube, Helm, GitOps) (NEXT)
+- [ ] **Modul 4.1: Pemetaan Konsep GCP ke AWS (EC2, S3, ECS/App Runner, RDS)**
+- [ ] **Modul 4.2: Lab Lokal Kubernetes (Pods, Deployments, Services dengan Minikube)**
+- [ ] **Modul 4.3: Pengemasan Aplikasi dengan Helm Charts & Konsep GitOps ArgoCD**
 
 # belajar-devops
