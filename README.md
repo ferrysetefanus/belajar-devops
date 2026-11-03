@@ -6,6 +6,7 @@ Selamat datang di repositori materi dan hands-on lab DevOps personal. Seluruh mo
 
 ## 📌 Dokumen Utama
 * 🗺️ **[ROADMAP.md](ROADMAP.md)** : Rencana belajar 4 fase (timeline 3–4 bulan, target arsitektur GCP hemat biaya & AWS bridge).
+* 🧠 **[DEVOPS-FRAMEWORK.md](modul/DEVOPS-FRAMEWORK.md)** : Kerangka berpikir mental model (C-B-R-D & Pohon Keputusan Cloud-Native).
 * 📋 **[kurikulum.md](kurikulum.md)** : Kurikulum referensi lengkap dari kursus DevOps Udemy.
 
 ---
