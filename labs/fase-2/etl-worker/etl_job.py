@@ -47,3 +47,4 @@ print("=" * 60, flush=True)
 print("🎉 [ETL-WORKER] BATCH SELESAI DENGAN SUKSES! (Status: EXIT 0)", flush=True)
 print("=" * 60, flush=True)
 sys.exit(0)
+

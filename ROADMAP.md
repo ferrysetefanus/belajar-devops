@@ -107,7 +107,7 @@ flowchart LR
     2. Build Docker image.
     3. Push ke Google Artifact Registry.
     4. Trigger deploy ke GCP Cloud Run & update Cloud Run Job.
-  - [ ] Atur cron di Cloud Scheduler (misal: setiap jam 02:00 pagi) untuk menjalankan job ETL penjualan harian.
+  - [x] Atur cron di Cloud Scheduler (misal: setiap jam 02:00 pagi) untuk menjalankan job ETL penjualan harian.
 
 ---
 

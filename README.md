@@ -63,9 +63,9 @@ DEVOPS/
 - [x] **Modul 2.5: Integrasi Database PostgreSQL di Compute Engine (e2-micro Always Free)**  
   File: [`modul/fase-2/05-database-e2-micro.md`](modul/fase-2/05-database-e2-micro.md)  
   *Status:* Berhasil setup VM e2-micro di US (`us-central1-a`) dengan IP `34.28.20.49` & PostgreSQL terhubung ke Cloud Run.
-- [ ] **Modul 2.6: Otomasi Scheduled ETL Worker (Cloud Run Jobs + Cloud Scheduler)**  
+- [x] **Modul 2.6: Otomasi Scheduled ETL Worker (Cloud Run Jobs + Cloud Scheduler)**  
   File: [`modul/fase-2/06-cloud-run-jobs-scheduler.md`](modul/fase-2/06-cloud-run-jobs-scheduler.md)  
-  *Status:* Sedang dikerjakan (membuat script batch ETL & pemicu cron otomatis).
+  *Status:* Berhasil membuat Cloud Run Job `tbs-sales-etl-job` & teruji sukses eksekusi batch agregasi data penjualan.
 
 ---
 

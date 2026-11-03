@@ -152,3 +152,4 @@ gcloud scheduler jobs create http trigger-tbs-etl-daily \
 ```
 
 Selamat! Sistem ETL data penjualan kantor Anda kini telah berjalan 100% otonom di cloud tanpa perlu ada orang yang menyalakan laptop di malam hari!
+
