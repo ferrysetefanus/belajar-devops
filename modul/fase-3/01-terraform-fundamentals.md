@@ -110,3 +110,4 @@ resource "google_compute_instance" "tbs_database" {
 ```
 
 Perhatikan betapa indahnya kode di atas: **seluruh konfigurasi server fisik kini terbaca seperti dokumen tertulis yang bisa di-version control di Git!**
+
