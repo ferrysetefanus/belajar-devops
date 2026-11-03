@@ -65,3 +65,4 @@ Kapan pun Anda diminta membuat sistem baru di kantor, tanyakan 3 hal ini pada di
    * Hanya butuh hidup jam 2 pagi $\rightarrow$ **Cloud Run Job + Cloud Scheduler**.
 3. **WHO deploys it? (Siapa yang bertanggung jawab deploy?)**
    * Jangan manusia! Serahkan pada **GitHub Actions** lewat `git push`. Manusia fokus koding, robot fokus deploy.
+

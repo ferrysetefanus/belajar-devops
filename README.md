@@ -70,8 +70,10 @@ DEVOPS/
 
 ---
 
-### ⏳ FASE 3: Infrastructure as Code (Terraform) & Observability (NEXT)
-- [ ] **Modul 3.1: Konsep IaC & Instalasi Terraform**
+### ⏳ FASE 3: Infrastructure as Code (Terraform) & Observability (ONGOING)
+- [x] **Modul 3.1: Konsep IaC & Pengenalan Terraform (HashiCorp HCL)**  
+  File: [`modul/fase-3/01-terraform-fundamentals.md`](modul/fase-3/01-terraform-fundamentals.md)  
+  *Status:* Memahami filosofi IaC, kelemahan ClickOps, dan siklus perintah `init`, `plan`, `apply`, `destroy`.
 - [ ] **Modul 3.2: Otomasi Provisioning Resource GCP dengan Terraform (Google Provider)**
 - [ ] **Modul 3.3: Monitoring, Logging & Alerting Otomatis ke Telegram/Slack**
 
