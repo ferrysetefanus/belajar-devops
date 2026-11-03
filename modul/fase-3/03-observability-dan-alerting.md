@@ -67,6 +67,7 @@ CHANNEL_ID=$(gcloud beta monitoring channels list --filter='displayName:"DevOps 
 cat << EOF > ~/etl-alert-policy.json
 {
   "displayName": "Peringatan Darurat: ETL Penjualan TBS Food Gagal",
+  "combiner": "OR",
   "documentation": {
     "content": "Perhatian Tim DevOps: Script ETL data penjualan mengalami kegagalan pada saat penarikan/transformasi data. Segera periksa log di Cloud Logging!",
     "mimeType": "text/markdown"
@@ -109,3 +110,4 @@ Google Cloud Monitoring akan mengirimkan surat resmi berisi:
 **`[FIRING] Peringatan Darurat: ETL Penjualan TBS Food Gagal`**!
 
 Selamat! Sistem Anda kini tidak hanya otomatis berjalan, tetapi juga **otomatis mengawasi dirinya sendiri 24 jam sehari**!
+

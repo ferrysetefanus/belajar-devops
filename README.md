@@ -80,7 +80,7 @@ DEVOPS/
   *Status:* Berhasil membuat GCS Bucket di Jakarta (`the-byway-487902-m9-tbs-sales-backup`) hanya dalam 1 detik lewat `terraform apply`.
 - [x] **Modul 3.3: Monitoring, Logging & Alerting Otomatis**  
   File: [`modul/fase-3/03-observability-dan-alerting.md`](modul/fase-3/03-observability-dan-alerting.md)  
-  *Status:* Konfigurasi 3 pilar observability & alarm otomatis berbasis error log ke email/notifikasi.
+  *Status:* Berhasil membuat Alert Policy & mengaitkan saluran notifikasi resmi email `psandrezzz19@gmail.com`. Teruji menembakkan log error.
 
 ---
 
