@@ -1,0 +1,67 @@
+name: CI/CD Deploy to GCP Cloud Run
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'labs/fase-1/sample-app/**'
+      - '.github/workflows/deploy.yml'
+
+jobs:
+  deploy:
+    name: Build & Deploy to Cloud Run
+    runs-on: ubuntu-latest
+
+    steps:
+      # 1. Ambil kode dari repository GitHub
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      # 2. Login ke Google Cloud menggunakan Secret Key
+      - name: Authenticate to Google Cloud
+        uses: google-github-actions/auth@v2
+        with:
+          credentials_json: ${{ secrets.GCP_SA_KEY }}
+
+      # 3. Pasang gcloud CLI di runner GitHub
+      - name: Set up Cloud SDK
+        uses: google-github-actions/setup-gcloud@v2
+
+      # 4. Beri izin Docker di runner untuk push ke Artifact Registry
+      - name: Configure Docker for Artifact Registry
+        run: |
+          gcloud auth configure-docker asia-southeast2-docker.pkg.dev --quiet
+
+      # 5. Build Docker Image dengan tag commit hash dan latest
+      - name: Build Docker Image
+        run: |
+          IMAGE_TAG="asia-southeast2-docker.pkg.dev/${{ secrets.GCP_PROJECT_ID }}/tbs-repo/sales-dashboard:${{ github.sha }}"
+          IMAGE_LATEST="asia-southeast2-docker.pkg.dev/${{ secrets.GCP_PROJECT_ID }}/tbs-repo/sales-dashboard:latest"
+          
+          docker build -t "$IMAGE_TAG" -t "$IMAGE_LATEST" labs/fase-1/sample-app
+
+      # 6. Push Image ke Google Artifact Registry di Jakarta
+      - name: Push Docker Image to Artifact Registry
+        run: |
+          IMAGE_TAG="asia-southeast2-docker.pkg.dev/${{ secrets.GCP_PROJECT_ID }}/tbs-repo/sales-dashboard:${{ github.sha }}"
+          IMAGE_LATEST="asia-southeast2-docker.pkg.dev/${{ secrets.GCP_PROJECT_ID }}/tbs-repo/sales-dashboard:latest"
+          
+          docker push "$IMAGE_TAG"
+          docker push "$IMAGE_LATEST"
+
+      # 7. Update Cloud Run Service dengan Image Baru
+      - name: Deploy to Cloud Run
+        run: |
+          IMAGE_TAG="asia-southeast2-docker.pkg.dev/${{ secrets.GCP_PROJECT_ID }}/tbs-repo/sales-dashboard:${{ github.sha }}"
+          
+          gcloud run deploy tbs-sales-dashboard \
+            --image="$IMAGE_TAG" \
+            --region=asia-southeast2 \
+            --platform=managed \
+            --allow-unauthenticated \
+            --port=8080 \
+            --memory=256Mi \
+            --min-instances=0 \
+            --max-instances=2
+

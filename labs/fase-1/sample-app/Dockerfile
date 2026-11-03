@@ -7,7 +7,7 @@ WORKDIR /app
 # Atur environment variable agar log langsung keluar ke konsol
 ENV PYTHONUNBUFFERED=1 \
     PORT=8080 \
-    ENV="Production Docker Container"
+    ENV="Production Cloud Run (Deployed via GitHub Actions CI/CD)"
 
 # Copy kode aplikasi ke dalam container
 COPY app.py .

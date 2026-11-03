@@ -100,8 +100,9 @@ flowchart LR
   - `GitHub Actions` (Workflows, Secrets Management, Build & Push Docker image, Automated Deployments)
   - `CI/CD Best Practices`
 * **Milestone / Proyek Riil:**
-  - [ ] Setup GCP Service Account & Artifact Registry untuk menyimpan container images.
-  - [ ] Buat GitHub Actions workflow `.github/workflows/deploy.yml`:
+  - [x] Setup GCP Service Account & Artifact Registry untuk menyimpan container images.
+  - [x] Deploy Web Service ke Google Cloud Run (HTTPS resmi region Jakarta).
+  - [x] Buat GitHub Actions workflow `.github/workflows/deploy.yml` untuk build & deploy otomatis ke Cloud Run.
     1. Checkout code & Jalankan unit test/validasi data.
     2. Build Docker image.
     3. Push ke Google Artifact Registry.

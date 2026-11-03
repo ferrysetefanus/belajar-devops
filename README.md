@@ -49,9 +49,16 @@ DEVOPS/
 ### ⏳ FASE 2: Implementasi GCP Hemat Biaya & CI/CD Pipeline
 - [x] **Modul 2.1: Fondasi GCP & Navigasi Cloud Console / Cloud Shell**  
   File: [`modul/fase-2/01-gcp-fundamentals-dan-setup.md`](modul/fase-2/01-gcp-fundamentals-dan-setup.md)  
-  *Status:* Berhasil setup Project GCP & mengaktifkan API (Cloud Run, Artifact Registry, Scheduler).
-- [ ] **Modul 2.2: Google Artifact Registry & Image Management di Cloud**
-- [ ] **Modul 2.3: Serverless Deployment ke Cloud Run & Scheduled ETL Jobs**
-- [ ] **Modul 2.4: Otomasi CI/CD dengan GitHub Actions**
+  *Status:* Berhasil setup Project GCP & mengaktifkan API.
+- [x] **Modul 2.2: Google Artifact Registry & Image Management di Cloud**  
+  File: [`modul/fase-2/02-artifact-registry.md`](modul/fase-2/02-artifact-registry.md)  
+  *Status:* Image `sales-dashboard:v1` berhasil di-build dan disimpan di Artifact Registry (region Jakarta).
+- [x] **Modul 2.3: Serverless Deployment ke Cloud Run & Scheduled ETL Jobs**  
+  File: [`modul/fase-2/03-cloud-run-deployment.md`](modul/fase-2/03-cloud-run-deployment.md)  
+  *Status:* Berhasil deploy service `tbs-sales-dashboard` ke Google Cloud Run (HTTPS live di region Jakarta: `asia-southeast2`).
+- [x] **Modul 2.4: Otomasi CI/CD dengan GitHub Actions**  
+  File: [`modul/fase-2/04-cicd-github-actions.md`](modul/fase-2/04-cicd-github-actions.md)  
+  Workflow: [`.github/workflows/deploy.yml`](.github/workflows/deploy.yml)  
+  *Status:* Pipeline CI/CD terkonfigurasi & siap dideploy otomatis via `git push`.
 
 # belajar-devops
